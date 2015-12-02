@@ -1,0 +1,1144 @@
+/*
+CSS LEGEND
+==========
+1) #struture
+2) #skin
+3) #slider
+4) #map-container
+5) #form-container
+*/
+
+/* #structure */
+
+
+.container {
+	width: 100%;
+}
+.content-container {
+	width: 100%;
+	max-width: 1380px;
+	margin: 0 auto;
+}
+.-header-container {
+	width: 240px;
+	margin: 0 auto;
+	padding: 1rem;
+}
+.-header-container {
+	visibility: hidden;
+	display: none;
+}
+.-secondary-container {
+	width: 120px;
+	margin: 0 auto;
+}
+.-logo {
+	width: 120px;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.main-nav  {
+	width: 100%;
+}
+.main-nav ul {
+    width:100%;
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-align:center;
+}
+.main-nav li { 
+    display:inline;
+}
+.main-nav a {
+    width: 8rem;
+    text-align: center;
+    display: inline-block;
+	padding: 1rem 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.content {
+	margin: 0 1rem; 
+}
+.-content {
+	margin: 0 1rem;
+	max-width: 680px;
+}
+.staff-content {
+	margin: 0 1rem;
+}
+.rental-content {
+	position: relative;
+	margin: 2rem auto;
+	width: 20rem;
+	height: 38rem;
+}
+.-products-container {
+	width: 220px;
+	margin: 3rem auto;
+}
+.-h1-logo {
+	width: 75px;
+	vertical-align: bottom;
+}
+.staff-h1-logo {
+	width: 60px;
+	vertical-align: bottom;
+}
+
+.product-categories {
+	width: 220px;
+}
+.product-info-container {
+	width: 220px;
+	height: 160px;
+	text-align: center;
+}
+.product-info-container img {
+	height: 80px;
+}
+.-products-button,
+.-products-button img {
+	display: none;
+}
+.staff-container {
+	width: 300px;
+}
+.staff-container-one {
+	width: 300px;
+	text-align: center;
+}
+.staff-container-two {
+	width: 300px;
+	text-align: center;
+}
+.staff-container-three {
+	width: 300px;
+	text-align: center;
+}		
+.staff-info-one {
+	width: 300px;
+	text-align: center;
+}
+.staff-info-two {
+	width: 300px;
+	text-align: center;
+}
+.staff-container h4,
+.staff-container img {
+	text-align: center;
+}
+.staff-container ul {
+	text-align: left;
+	padding-left: 1rem;
+}
+.staff-container li {
+	font-size: .75rem;
+}
+.staff-container img {
+	width: 240px;
+	text-align: center;
+}
+.rental-category-hide {
+	visibility: hidden;
+}
+#cat-one {
+	visibility: hidden;
+}
+.rental-side-nav {
+	width: 18rem;
+	position: absolute;
+	top: 0;
+	left: 0.25rem;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+.rental-side-nav h1 {
+	font-size: 1.6rem;
+	text-align: center;
+}
+.rental-side-nav ul {
+	list-style: none;
+	padding-left: 0;
+}
+.rental-side-nav li {
+	padding: 0.2rem 0;
+	border-bottom: 1px solid #204288;
+}
+.rental-side-nav li:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.rental-rates-table {
+	width: 20rem;
+	position: absolute;
+	top: 2rem;
+	left: 0;
+	font-size: 0.65rem;
+	visibility: hidden;
+}
+.rental-rates-table h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+.prod-desc {
+	width: 9.25rem;
+	text-align: left;
+}
+.rental-rates-table th,
+.rental-rates-table td {
+	padding: .1rem .2rem;
+}
+.back-to-rentals-menu {
+	visibility: hidden;
+	position: absolute;
+	top: .75rem;
+	left: .75rem;
+	font-size: 1.25rem;
+}
+.back-to-rentals-menu:hover {
+	cursor: pointer;
+}
+.currency {	
+	text-align: right;
+}
+.indent {
+	text-indent: 0.5rem;
+}
+.italicize {
+	font-style: italic;
+}
+.contact-info {
+	width: 240px;
+}
+.contact-info.centered {
+	margin: 0 auto;
+}
+aside {
+	margin: 0 1rem;
+	padding: 0 1rem;
+}
+aside img {
+	width: 120px;
+	margin: 1rem 0;
+}
+.content-logo-container {
+	text-align: center;
+}
+.content--logo {
+	height: 60px;
+	padding: 1rem;
+}
+.content-staff-logo {
+	height: 62px;
+	padding: 1rem;
+}
+aside h3 {
+	margin-bottom: 0;
+}
+aside p {
+	margin-top: 0.5rem;
+}
+.aside-map {
+		margin: 1rem auto;
+		width: 260px;
+		height: 200px;
+}
+footer {
+	padding: 0.025rem 0;
+}
+footer p {
+	padding: 0 1rem;
+}
+
+
+/* #skin */
+
+@font-face {
+         font-family: 'ChunkFiveRegular';
+         src: url('Chunkfive-webfont.eot');
+         src: url('Chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Chunkfive-webfont.woff') format('woff'),
+         url('Chunkfive-webfont.ttf') format('truetype'),
+         url('Chunkfive-webfont.svg#ChunkFiveRegular') format('svg');
+         font-weight: normal;
+         font-style: normal;
+}
+
+.font-face-font {
+	font-family: 'ChunkFiveRegular';
+}
+body {
+	background-image: url('images/banner-1.jpg');
+	font-family: Arial, Verdana, Arial, sans-serif;
+	position: relative;
+}
+.container {
+	background-color: #d3d3d3;
+}
+.slider-container {
+	visibility: hidden;
+	display: none;
+}
+.dark-background-white-font {
+	background-color: #054082;
+	color: #fff;
+}
+.dark-font {
+	color: #054082;
+}
+iframe {
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* #form-container */
+
+.form-container {
+	position: absolute;
+	top: 5rem;
+	left: 50%;
+    transform: translate(-50%, 0);
+	width: 500px;
+	height: 500px;
+	background-color: #fff;
+	color: #054082;
+	font-family: 'ChunkFiveRegular', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	border-radius: 0.5rem;
+	padding: 0.75rem;
+	visibility: visible;
+	display: none;
+	z-index: 100;
+}
+.form-container h2 {
+	padding-left: 2.5rem;
+}
+.form-close-button {
+	position: fixed;
+	top: 2rem;
+	right: 4rem;
+	cursor: pointer;
+	transition: transform 0.3s ease-in;
+	padding: 0;
+}
+.form-close-button:hover {
+	color: #00aa00;
+	  -webkit-transform: rotate(60deg); /* Ch <36, Saf 5.1+ */
+      -ms-transform: rotate(60deg); /* IE 9 */
+          transform: rotate(90deg); /* W3C, IE 10, Fx 16+, Op 12.1+ */
+}
+form ul {
+    margin: 0 auto;
+    font-size: 0.85rem;
+}
+form li {
+    padding: 0.25rem 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+form label {
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+    width: 100%;
+}
+form input,
+textarea {
+    border:1px solid #bebebe;
+    padding: 7px;
+    margin:0px;
+}
+form input:hover,
+textarea:hover {
+    border: 1px solid #00aa00;
+}
+textarea{
+    height: 100px;
+}
+form button {
+    background: #204288;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+}
+form button:hover{
+    background: #00aa00;
+}
+form .required{
+    color:red;
+    font-size: .75rem;
+}
+form .missing-fields-message {
+	color:red;
+    font-size: .75rem;
+    float: right;
+    padding: 1rem 3.5rem;
+    visibility: hidden;
+}
+
+/* #overlay */
+.overlay {
+	opacity: 0.75;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: black;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	visibility: hidden;
+	display: none;
+}
+
+@media all and (min-width: 480px) {
+	
+	header {
+		width: 100%;
+		margin: 0 auto;
+		background-color: #0857a2;
+	}
+	.-header-container {
+		width: 240px;
+		float: left;
+		margin: 0;
+	}
+	.-header-container {
+		width: 100px;
+		float: right;
+		visibility: visible;
+		display: inline;
+		margin: 1.5rem 0;
+	}
+	.-logo {
+		width: 100px;
+	}
+	.-secondary-container {
+		visibility: hidden;
+		display: none;
+	}
+	.content {
+		margin: 1rem 2rem;
+		width: 90%;
+	}
+	.-content {
+		margin: 1rem 2rem;
+		width: 90%;	
+		float: left;
+	}
+	.staff-content {
+		margin: 1rem 2rem;
+		width: 90%;	
+		float: left;
+	}
+	.rental-content {
+		position: relative;
+		margin: 2rem auto;
+		width: 28rem;
+		height: 50rem;
+	}
+	.-products-container {
+		width: 440px;
+	}
+	.fall-flyer-banner{
+		display: none;
+	}
+	.product-categories {
+		width: 220px;
+		float: left;
+	}
+	.product-info-container {
+		width: 220px;
+		height: 160px;
+		text-align: center;
+	}
+	.product-info-container img {
+		height: 80px;
+	}
+	.-products-button,
+	.-products-button img {
+		width: 120px;
+		float: none;
+		display: none;
+	}
+	.main-nav a {
+	    width: 4.5rem;
+		padding: 1rem 0;
+	    font-size: 0.8rem;
+	}
+	.rental-side-nav {
+		width: 18rem;
+		left: 20%;
+	}
+	.rental-rates-table {
+		width: 28rem;
+		top: 2rem;
+		left: 0;
+		font-size: 0.9rem;
+		visibility: hidden;
+	}
+	.rental-rates-table h2 {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.prod-desc {
+		width: 13rem;
+		text-align: left;
+	}
+	.rental-rates-table th,
+	.rental-rates-table td {
+		padding: .1rem .3rem;
+	}
+	.back-to-rentals-menu {
+		visibility: hidden;
+		position: absolute;
+		top: .75rem;
+		left: .75rem;
+	}
+	.back-to-rentals-menu:hover {
+		cursor: pointer;
+	}
+	.currency {	
+		text-align: right;
+	}
+	aside {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.rentals-aside {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.contact-info {
+		width: 50%;
+		float: left;
+	}
+	.aside-map {
+		margin-top: 2rem;
+		width: 50%;
+		height: 200px;
+		float: right;
+	}
+
+}
+
+
+@media all and (min-width: 720px) {
+	
+	header {
+
+	}
+	.-header-container {
+		margin: 0;
+	}
+	.-header-container {
+		width: 120px;
+		margin: 1rem 0;
+	}
+	.-logo {
+		width: 120px;
+	}
+	.main-nav a {
+	    width: 6rem;
+		padding: 1rem 0;
+	    font-size: 1rem;
+	}
+	li a:hover {
+		background-color: #00aa00;
+		text-decoration: underline;
+	}
+	.content {
+		width: 80%;
+		margin: 2rem auto;
+	}
+	.-content {
+		width: 80%;
+		margin: 2rem 4rem;
+	}
+	.rental-content {
+		position: relative;
+		margin: 2rem auto;
+		width: 42rem;
+		height: 42rem;
+	}
+	.product-info-container:hover {
+		text-decoration: underline;
+		color: rgb(243,122,31);
+	}
+	.staff-content {
+		width: 85%;
+		margin: 2rem 4rem;
+	}
+	.staff-container {
+		width: 600px;
+	}
+	.staff-container-one {
+		width: 600px;
+		height: 400px;
+		text-align: center;
+	}
+	.staff-container-two {
+		width: 600px;
+		height: 400px;
+		text-align: center;
+	}
+	.staff-container-three {
+		width: 600px;
+		height: 400px;
+		text-align: center;
+	}		
+	.staff-info-one {
+		width: 300px;
+		float: left;
+		text-align: center;
+	}
+	.staff-info-two {
+		width: 300px;
+		float: right;
+		text-align: center;
+	}
+	.staff-container h4,
+	.staff-container img {
+		text-align: center;
+	}
+	.staff-container ul {
+		text-align: left;
+		padding-left: 1rem;
+	}
+	.staff-container li {
+		font-size: .75rem;
+	}
+	.staff-container img {
+		width: 240px;
+		text-align: center;
+	}
+	.rental-side-nav {
+		width: 13rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 0.75rem;
+		text-transform: uppercase;
+	}
+	.rental-side-nav h1 {
+		font-size: 1.05rem;
+		text-align: left;
+	}
+	.rental-side-nav ul {
+		list-style: none;
+		padding-left: 0;
+
+	}
+	.rental-side-nav li {
+		padding: 0.2rem 0;
+		border-bottom: 1px solid #054082;
+	}
+	.rental-side-nav li:hover {
+		text-decoration: underline;
+	}
+	#cat-one {
+		visibility: visible;
+	}
+	#cat-nav-one {
+		color: #00aa00;
+	}
+	.rental-rates-table {
+		width: 28rem;
+		position: absolute;
+		top: 0;
+		left: 14rem;
+		font-size: 0.75rem;
+	}
+	.rental-rates-table h2 {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.prod-desc {
+		width: 11rem;
+		text-align: left;
+	}
+	.rental-rates-table th,
+	.rental-rates-table td {
+		padding: .1rem .5rem;
+	}
+	.back-to-rentals-menu {
+		visibility: hidden;
+	}
+	aside {
+		float: left;
+		padding-bottom: 2rem;
+	}
+	.contact-info {
+		width: 240px;
+		margin-left: 7.5%;
+		float: left;
+	}
+	.aside-map {
+		margin: 1rem 7.5% 0 0;
+		width: 260px;
+		height: 260px;
+		float: right;
+	}
+
+	/* #slider */
+
+	.slider-container {
+		visibility: visible;
+		display: inline;
+		position: relative;
+		width: 100%;
+		min-width: 576px;
+		margin: 0 auto;
+		height: 320px;
+	}
+	#slider {
+		width: 576px;
+		height: 320px;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+	.slides {
+		display: block;
+		width: 5184px;
+		height: 320px;
+		margin: 0 0 0 -576px;
+		padding: 0;
+	}
+	.slide {
+		float: left;
+		list-style: none;
+		width: 576px;
+		height: 320px;
+	}
+	.slides li {
+		text-align: center;
+	}
+	.index-image {
+		width: 360px;
+		text-align: center;
+	  	position: relative;
+	  	top: 50%;
+	  	transform: translateY(-50%);
+	}
+	.index-image-medsize {
+		width: 280px;
+		text-align: center;
+	  	position: relative;
+	  	top: 50%;
+	  	transform: translateY(-50%);
+	}
+	.index-image-smallsize {
+		width: 200px;
+		text-align: center;
+	  	position: relative;
+	  	top: 50%;
+	  	transform: translateY(-50%);
+	}
+	/* slider arrows
+	.fa-arrow-circle-o-right {
+		right: 15%;
+		bottom: 50%;
+		position: absolute;
+		color: gray;
+	}
+	.fa-arrow-circle-o-left {
+		left: 15%;
+		bottom: 50%;
+		position: absolute;
+		color: gray;
+	}
+	.fa-arrow-circle-o-right:hover,
+	.fa-arrow-circle-o-left:hover
+ 	{
+		color: #000;
+	}*/
+
+}
+
+
+@media all and (min-width: 840px) {
+
+	header {
+
+	}
+	.content {
+		width: 55%;
+		float: left;
+		min-width: 576px;
+		margin: 2rem 0 2rem 2.5%;
+	}
+	.-content {
+		width: 70%;
+		margin: 2rem 0 2rem 2%;
+	}
+	.staff-content {
+		width: 70%;
+		margin: 2rem 0 2rem 2%;
+	}
+	.rental-content {
+		margin: 2rem 0 2rem 1%;
+		width: 37rem;
+		height: 40rem;
+		float: left;
+		position: relative;
+	}
+	.-products-container {
+		width: 560px;
+		margin: 2rem 0;
+	}
+	.fall-flyer-banner{
+		width: 120px;
+		float: left;
+		display: inline-block;
+	}
+	.product-categories {
+		width: 220px;
+		float: left;
+	}
+	.product-info-container {
+		width: 220px;
+		height: 160px;
+		text-align: center;
+	}
+	.product-info-container img {
+		height: 80px;
+	}
+	.-products-button,
+	.-products-button img {
+		width: 120px;
+		float: none;
+		display: block;
+	}
+	.staff-container {
+		width: 600px;
+	}
+	.staff-container-one {
+		width: 600px;
+		height: 400px;
+		text-align: center;
+	}
+	.staff-container-two {
+		width: 600px;
+		height: 400px;
+		text-align: center;
+	}
+	.staff-container-three {
+		width: 600px;
+		height: 400px;
+		text-align: center;
+	}		
+	.staff-info-one {
+		width: 300px;
+		float: left;
+		text-align: center;
+	}
+	.staff-info-two {
+		width: 300px;
+		float: right;
+		text-align: center;
+	}
+	.staff-container h4,
+	.staff-container img {
+		text-align: center;
+	}
+	.staff-container ul {
+		text-align: left;
+		padding-left: 2rem;
+	}
+	.staff-container li {
+		font-size: .75rem;
+	}
+	.staff-container img {
+		width: 240px;
+		text-align: center;
+	}
+	.rental-side-nav {
+		width: 12rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 0.7rem;
+		text-transform: uppercase;
+	}
+	.rental-side-nav h1 {
+		font-size: 1.05rem;
+	}
+	.rental-side-nav ul {
+		list-style: none;
+		padding-left: 0;
+
+	}
+	.rental-side-nav li {
+		padding: 0.2rem 0;
+		border-bottom: 1px solid #204288;
+	}
+	.rental-side-nav li:hover {
+		text-decoration: underline;
+	}
+	.rental-rates-table {
+		width: 24rem;
+		position: absolute;
+		top: 0;
+		left: 13rem;
+		font-size: 0.7rem;
+	}
+	.rental-rates-table h2 {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.prod-desc {
+		width: 10rem;
+		text-align: left;
+	}
+	.rental-rates-table th,
+	.rental-rates-table td {
+		padding: .1rem .4rem;
+	}
+	.currency {
+		text-align: right;
+	}
+	.rental-category-hide {
+		visibility: hidden;
+	}
+	aside {
+		float: right;
+		margin: 2.5rem 2% 0 0;
+		width: 180px;
+	}
+	.rentals-aside {
+		float: right;
+		margin: 2.5rem 0 0 0;
+		width: 180px;
+		font-size: .7rem;	
+	} 
+	.contact-info {
+		width: 240px;
+		margin: 0;
+		float: none;
+	}
+	.aside-map {
+		margin: 0 auto;
+		width: 180px;
+		height: 160px;
+		float: none;
+	}
+}
+
+@media all and (min-width: 1024px) {
+
+	header {
+			width: 92%;
+	}
+	.content {
+		width: 60%;
+		float: left;
+		margin: 2rem 0 2rem 5%;
+	}
+	.-content {
+		width: 67%;
+		float: left;
+		margin: 2rem 0 2rem 4%;
+	}
+	.staff-content {
+		width: 680px;
+		float: left;
+		margin: 2rem 0 2rem 4%;
+	}
+	.rental-content {
+		margin: 2rem 0 2rem 2.5%;
+		width: 44rem;
+		height: 42rem;
+		float: left;
+		position: relative;
+	}
+	.-products-container {
+		width: 680px;
+		margin: 2rem 0;
+	}
+	.fall-flyer-banner{
+		width: 120px;
+		float: left;
+	}
+	.product-categories {
+		width: 220px;
+		float: left;
+	}
+	.product-info-container {
+		width: 220px;
+		height: 160px;
+		text-align: center;
+	}
+	.product-info-container img {
+		height: 80px;
+	}
+	.-products-button,
+	.-products-button img {
+		width: 120px;
+		float: left;
+	}
+	.rental-side-nav {
+		width: 14rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 0.8rem;
+		text-transform: uppercase;
+	}
+	.rental-side-nav h1 {
+		font-size: 1.25rem;
+	}
+	.rental-side-nav ul {
+		list-style: none;
+		padding-left: 0;
+
+	}
+	.rental-side-nav li {
+		padding: 0.2rem 0;
+		border-bottom: 1px solid #204288;
+	}
+	.rental-side-nav li:hover {
+		text-decoration: underline;
+	}
+	.rental-rates-table {
+		width: 28rem;
+		position: absolute;
+		top: 0;
+		left: 16rem;
+		font-size: 0.8rem;
+	}
+	.rental-rates-table h2 {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.prod-desc {
+		width: 12rem;
+		text-align: left;
+	}
+	.rental-rates-table th,
+	.rental-rates-table td {
+		padding: .1rem .5rem;
+	}
+	.currency {
+		text-align: right;
+	}
+	.rental-category-hide {
+		visibility: hidden;
+	}
+	aside {
+		width: 200px;
+		float: right;
+		margin: 2.5rem 4% 0 0;
+	}
+	.rentals-aside {
+		width: 200px;
+		float: right;
+		margin: 2.5rem 2.5% 0 0;
+		font-size: .8rem;
+	}
+	.aside-map {
+		width: 200px;
+		height: 180px;
+	}
+
+}
+
+
+
+
+@media all and (min-width: 1160px) {
+
+	header {
+		background-image: url('images/welcome-slide.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 100%;
+		height: 250px;
+	}
+	.content {
+		margin: 2rem 0 2rem 7.5%;
+	}
+	.-content {
+		margin: 2rem 0 2rem 7.5%;
+	}
+	.staff-content {
+		margin: 2rem 0 2rem 7.5%;
+	}
+	.rental-content {
+		margin: 2rem 0 2rem 5%;
+		width: 52rem;
+		height: 50rem;
+		float: left;
+		position: relative;
+	}
+	.-products-container {
+		margin: 2rem 0;
+	}
+	.rental-side-nav {
+		width: 14rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 0.8rem;
+		text-transform: uppercase;
+	}
+	.rental-side-nav h1 {
+		font-size: 1.25rem;
+	}
+	.rental-side-nav ul {
+		list-style: none;
+		padding-left: 0;
+	}
+	.rental-side-nav li {
+		padding: 0.25rem 0;
+		border-bottom: 1px solid #204288;
+	}
+	.rental-side-nav li:hover {
+		text-decoration: underline;
+	}
+	.rental-rates-table {
+		width: 34rem;
+		position: absolute;
+		top: 0;
+		left: 16rem;
+		font-size: 0.9rem;
+	}
+	.rental-rates-table h2 {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.prod-desc {
+		width: 14rem;
+		text-align: left;
+	}
+	.rental-rates-table th,
+	.rental-rates-table td {
+		padding: .1rem 0.75rem;
+	}
+	.currency {
+		text-align: right;
+	}
+	aside {
+		margin: 2.5rem 7.5% 0 0;
+	}
+	.rentals-aside {
+		margin: 2.5rem 4% 0 0;
+		font-size: 0.9rem;
+	}
+	.main-nav a {
+	    width: 8rem;
+		padding: 1rem 0;
+	    font-size: 1.2rem;
+	    margin-right: 2rem;
+	    margin-left: 2rem;
+	}
+
+}
